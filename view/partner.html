@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Une nouvelle méthode ludo-interactive pour vous faciliter à tous l’apprentissage de la langue arabe !"
+    />
+    <link rel="stylesheet" href="./public/style.css" />
+    <script src="index.js"></script>
+    <script
+      src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+      type="module"
+    ></script>
+    <title>awlad</title>
+  </head>
+  <body>
+    <header class="partner-page">
+      <nav>
+        <div class="nav">
+          <div class="logo display-desktop">
+            <a href="/">
+              <img src="./images/logo.png" alt="Awlad School" />
+            </a>
+          </div>
+          <div class="nav-links display-desktop">
+            <a class="home" href="/">
+              <span class="fr">Accueil</span><span class="en hidden">Home</span>
+            </a>
+            <a href="/donate"
+              ><span class="fr">Faire un don</span>
+              <span class="en hidden">Donate</span>
+            </a>
+            <a class="active" href="/partner"
+              ><span class="fr">Devenir un partenaire</span>
+              <span class="en hidden">Bocome a partner</span>
+            </a>
+          </div>
+          <div class="switch-language">
+            <select>
+              <option value="fr">FR</option>
+              <option value="en">EN</option></select
+            ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 35">
+              <path
+                id="Polygon_7"
+                data-name="Polygon 7"
+                d="M15.152,2.952a3,3,0,0,1,4.7,0l11.28,14.181A3,3,0,0,1,28.78,22H6.22a3,3,0,0,1-2.348-4.868Z"
+                transform="translate(0 35) rotate(-90)"
+              ></path>
+            </svg>
+          </div>
+          <div class="logo display-mobile">
+            <img src="./images/logo-mobile.svg" alt="Awlad School logo" />
+          </div>
+
+          <div class="burger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <div class="nav-mobile display-mobile">
+          <a href="/">
+            <span class="fr">Accueil</span><span class="en hidden">Home</span>
+          </a>
+          <a href="/donate"
+            ><span class="fr">Faire un don</span>
+            <span class="en hidden">Donate</span>
+          </a>
+          <a href="/partner"
+            ><span class="fr">Devenir un partenaire</span>
+            <span class="en hidden">Bocome a partner</span>
+          </a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="partner-section">
+        <div class="partner-section-content">
+          <h1>
+            <span class="fr"
+              >Sponsor, investisseur, professeur, codeur…<br />Vous souhaitez
+              devenir partenaire ?<br />Laissez-nous un message !</span
+            >
+            <span class="en hidden"
+              >Sponsor, investor,<br />teacher, coder…<br />You want to become a
+              partner ?<br />Leave us a message!</span
+            >
+          </h1>
+          <img
+            class="display-desktop"
+            src="./images/perso-prof.png"
+            alt="perso-prof"
+          />
+          <div id="partner-form">
+            <div class="partner-section1-form">
+              <label> <strong>nom </strong>(obligatoire) </label>
+              <input name="name" placeholder="Votre nom ici" />
+              <label> <strong>Email </strong> (obligatoire) </label>
+              <input name="email" placeholder="Votre email ici" />
+              <label>Votre message</label>
+              <textarea
+                name="message"
+                placeholder="Votre message ici"
+                cols="30"
+                rows="10"
+              ></textarea>
+              <div class="lottie lottie-message">
+                <dotlottie-player
+                  src="https://lottie.host/af2920a8-3648-4ace-98bd-55c3900a296d/UEEgPWvqeA.json"
+                  background="transparent"
+                  speed="1"
+                  loop
+                  autoplay
+                ></dotlottie-player>
+              </div>
+              <div class="partner-section1-btn-mention">
+                <button disabled="">Enovoyer</button>
+                <p>
+                  <i
+                    >* Vos coordonnées resteront 100% confidentielles et ne
+                    seront ni partagées, ni revendues, à un tiers.</i
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="logo-and-partner">
+        <div class="col1 col">
+          <img src="./images/logo.svg" alt="Awlad School logo" />
+          <p>
+            <span class="fr"
+              >Au printemps 2021, à l’occasion du lancement de la plateforme
+              française Hoopow, une première version du logiciel Awlad School
+              voit le jour. Imaginée par une équipe constituée d’un auteur BD,
+              d’un directeur pédagogique et d’un développeur web, le projet a
+              pour objectif de proposer à tous l’accès à l’apprentissage de la
+              langue arabe, de façon autonome et interactive. <br />
+              Aujourd’hui, ce sont plus de 14 personnes qui travaillent à temp
+              plein sur le projet !
+            </span>
+            <span class="en hidden"
+              >In the spring of 2021, on the occasion of the launch of the
+              French platform Hoopow, a first version of the Awlad School
+              software is born. Conceived by a team made up of a comic book
+              author, an educational director and a web developer, the project’s
+              objective is to offer everyone access to learning Arabic in an
+              autonomous and interactive way. <br />
+              Today, more than 14 people are working full time on the
+              project!</span
+            >
+          </p>
+        </div>
+        <div class="col2 col">
+          <div class="app-container display-desktop">
+            <a
+              href="https://play.google.com/store/apps/details?id=com.bdouin.awladschool&amp;hl=fr&amp;gl=US"
+              target="_blank"
+              class="app-container__link1"
+              ><img
+                src="./images/google-play-logo.png"
+                alt="Awlad School google play"
+              />
+              <p>
+                <span class="fr">Disponible sur</span>
+                <span class="en hidden">Available on</span><br /><strong
+                  >Google Play</strong
+                >
+              </p></a
+            ><a
+              href="https://apps.apple.com/tt/app/awlad-learn-arabic/id1612014910"
+              target="_blank"
+              class="app-container__link2"
+              ><img
+                src="./images/apple-logo.png"
+                alt="Awlad School App Store"
+              />
+              <p>
+                <span class="fr">Disponible sur</span>
+                <span class="en hidden">Available on</span><br /><strong
+                  >App Store</strong
+                >
+              </p></a
+            >
+          </div>
+          <h2>
+            <span class="fr">PARTENAIRES OFFICIELS</span>
+            <span class="en hidden">OFFICIAL PARTNERS</span>
+          </h2>
+          <div class="partner-logo">
+            <img
+              class="alterwealth"
+              src="./images/alterwealth.svg"
+              alt="Alterwealth logo"
+            />
+            <img class="bdouin" src="./images/bdouin.svg" alt="BDouin logo" />
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <span class="fr"> ©2024. Site réalisé par Studio BDouin </span>
+        <span class="en hidden"> ©2024. Site realised by Studio BDouin </span>
+      </div>
+    </footer>
+  </body>
+</html>
