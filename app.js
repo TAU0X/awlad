@@ -1,7 +1,14 @@
 const express = require('express');
-const fs = require('fs');
-const app = express();
+const mongoose = require('mongoose');
+const dotenv = require('dotenv').config();
 const path = require('path');
+const partner = require('./model/Partner');
+const app = express();
+
+mongoose
+  .connect(process.env.MONGODB_URI)
+  .then(() => console.log('Connexion à MongoDB réussie !'))
+  .catch(() => console.log('Connexion à MongoDB échouée !'));
 app.use((req, res, next) => {
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader(
@@ -16,13 +23,13 @@ app.use((req, res, next) => {
 });
 
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, '/view/', 'index.html'));
+  res.sendFile(path.join(__dirname, '/front/', 'index.html'));
 });
 app.get('/donate', (req, res) => {
-  res.sendFile(path.join(__dirname, '/view/', 'donate.html'));
+  res.sendFile(path.join(__dirname, '/front/', 'donate.html'));
 });
 app.get('/partner', (req, res) => {
-  res.sendFile(path.join(__dirname, '/view/', 'partner.html'));
+  res.sendFile(path.join(__dirname, '/front/', 'partner.html'));
 });
-app.use(express.static('view'));
+app.use(express.static('front'));
 module.exports = app;
